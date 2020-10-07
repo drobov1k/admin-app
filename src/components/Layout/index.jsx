@@ -3,6 +3,7 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import Header from '../Header';
+import './style.css';
 
 function Layout(props) {
   return (
@@ -16,7 +17,7 @@ function Layout(props) {
                 <Col md={2} className="sidebar">
                   <ul>
                     <li>
-                      <NavLink to="/">Home</NavLink>
+                      <NavLink exact to="/">Home</NavLink>
                     </li>
                     <li>
                       <NavLink to="/products">Products</NavLink>

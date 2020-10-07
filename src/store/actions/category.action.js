@@ -28,7 +28,7 @@ export const addCategory = (form) => async (dispatch) => {
   if (resp.status === 201) {
     dispatch({
       type: categoryConstants.ADD_NEW_CATEGORY_SUCCESS,
-      payload: resp.data.category,
+      payload: { category: resp.data.category },
     });
   } else {
     dispatch({
